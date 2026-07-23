@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nizar Assad — Développeur Shopify · Migrations & intégrations</title>
+<meta name="description" content="Développeur Shopify en marque blanche pour agences — migrations, extensions d'app, intégrations API. Français/anglais, fuseau GMT+1.">
+<style>
+  :root{
+    --ink:#16181d; --paper:#ffffff; --muted:#5b6470; --line:#e6e8ec;
+    --accent:#0f6e5c; --accent-ink:#ffffff; --card:#f7f8fa;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#e8eaed; --paper:#131519; --muted:#9aa3ad; --line:#272b31;
+           --accent:#2fae94; --accent-ink:#0c1210; --card:#1a1d22; }
+  }
+  *{box-sizing:border-box; margin:0}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink); background:var(--paper);
+    max-width:760px; margin:0 auto; padding:48px 24px 80px;
+  }
+  header{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:48px}
+  .lang button{
+    background:none; border:1px solid var(--line); color:var(--muted);
+    padding:4px 10px; border-radius:6px; cursor:pointer; font-size:13px;
+  }
+  .lang button.on{border-color:var(--accent); color:var(--accent); font-weight:600}
+  h1{font-size:1.9rem; line-height:1.25; letter-spacing:-.02em; margin-bottom:12px}
+  .sub{color:var(--muted); font-size:1.05rem; max-width:56ch}
+  section{margin-top:44px}
+  h2{font-size:.8rem; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); margin-bottom:18px}
+  .svc{border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:var(--card)}
+  .svc h3{font-size:1.05rem; margin-bottom:6px}
+  .svc p{color:var(--muted); font-size:.95rem}
+  .proof a{color:var(--accent); text-decoration:none; font-weight:600}
+  .proof a:hover{text-decoration:underline}
+  .proof li{margin-bottom:10px; list-style:none}
+  .proof span{display:block; color:var(--muted); font-size:.9rem}
+  .facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px}
+  .fact{border-left:3px solid var(--accent); padding:2px 0 2px 14px; font-size:.95rem}
+  .fact b{display:block}
+  .cta{
+    display:inline-block; margin-top:10px; background:var(--accent); color:var(--accent-ink);
+    padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:600;
+  }
+  .note{color:var(--muted); font-size:.85rem; margin-top:10px}
+  footer{margin-top:64px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem}
+  [data-l]{display:none}
+  html[data-lang="fr"] [data-l="fr"]{display:revert}
+  html[data-lang="en"] [data-l="en"]{display:revert}
+</style>
+</head>
+<body>
+<header>
+  <div style="font-weight:700">Nizar Assad</div>
+  <nav class="lang">
+    <button id="bfr" class="on" onclick="setLang('fr')">FR</button>
+    <button id="ben" onclick="setLang('en')">EN</button>
+  </nav>
+</header>
+
+<h1>
+  <span data-l="fr">Renfort Shopify en marque blanche, pour agences et marchands exigeants.</span>
+  <span data-l="en">White-label Shopify development for agencies and demanding merchants.</span>
+</h1>
+<p class="sub">
+  <span data-l="fr">Migrations, extensions d'app, intégrations API. Du code qui survit aux mises à jour de thème. En français et en anglais, sur votre fuseau horaire (GMT+1).</span>
+  <span data-l="en">Migrations, app extensions, API integrations. Code that survives theme updates. In French and English, on your timezone (GMT+1).</span>
+</p>
+
+<section>
+  <h2><span data-l="fr">Trois services, rien d'autre</span><span data-l="en">Three services, nothing else</span></h2>
+
+  <div class="svc">
+    <h3><span data-l="fr">Personnalisations résistantes aux mises à jour</span><span data-l="en">Update-safe customizations</span></h3>
+    <p>
+      <span data-l="fr">Vos modifications de thème disparaissent à chaque mise à jour ? Je les reconstruis en app blocks et metafields — proprement, définitivement.</span>
+      <span data-l="en">Theme edits vanishing on every update? I rebuild them as app blocks and metafields — cleanly, permanently.</span>
+    </p>
+  </div>
+
+  <div class="svc">
+    <h3><span data-l="fr">Migrations Scripts → Functions (Shopify Plus)</span><span data-l="en">Scripts → Functions migrations (Shopify Plus)</span></h3>
+    <p>
+      <span data-l="fr">Les Scripts sont morts le 30 juin 2026. Remises, logique de livraison et de paiement : audit de ce qui s'est arrêté, migration propre vers Functions.</span>
+      <span data-l="en">Scripts died June 30, 2026. Discounts, shipping and payment logic: audit of what silently stopped, clean migration to Functions.</span>
+    </p>
+  </div>
+
+  <div class="svc">
+    <h3><span data-l="fr">Intégrations API</span><span data-l="en">API integrations</span></h3>
+    <p>
+      <span data-l="fr">Synchronisation stock/POS, tarifs transporteurs en direct (Carrier Service), exports comptables, connecteurs sur mesure — avec gestion des cas d'échec, pas seulement du cas idéal.</span>
+      <span data-l="en">Stock/POS sync, live carrier rates (Carrier Service), accounting exports, custom connectors — with failure modes handled, not just the happy path.</span>
+    </p>
+  </div>
+</section>
+
+<section class="proof">
+  <h2><span data-l="fr">Du code public, pas des promesses</span><span data-l="en">Public code, not claims</span></h2>
+  <ul>
+    <li>
+      <a href="https://github.com/Nizarassad/shopify-theme-update-safe">shopify-theme-update-safe</a>
+      <span data-l="fr">Trois personnalisations construites deux fois — la mauvaise et la bonne manière — avec la preuve avant/après mise à jour de thème. FR/EN.</span>
+      <span data-l="en">Three customizations built twice — the wrong way and the right way — with before/after proof across a theme update. FR/EN.</span>
+    </li>
+    <li>
+      <a href="https://github.com/Nizarassad/shopify-scripts-to-functions">shopify-scripts-to-functions</a>
+      <span data-l="fr">Kit de migration : les trois patterns Scripts les plus courants, chaque Script Ruby mort accompagné de sa Function vivante, pièges documentés.</span>
+      <span data-l="en">Migration kit: the three most common Script patterns, each dead Ruby Script paired with its living Function, traps documented.</span>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2><span data-l="fr">Conditions claires</span><span data-l="en">Clear terms</span></h2>
+  <div class="facts">
+    <div class="fact"><b><span data-l="fr">Tâche test</span><span data-l="en">Test task</span></b>
+      <span data-l="fr">forfait fermé, sans engagement</span><span data-l="en">fixed price, zero commitment</span></div>
+    <div class="fact"><b><span data-l="fr">Marque blanche</span><span data-l="en">White-label</span></b>
+      <span data-l="fr">non-sollicitation de vos clients, au contrat</span><span data-l="en">client non-solicitation, in the contract</span></div>
+    <div class="fact"><b><span data-l="fr">Facturation</span><span data-l="en">Invoicing</span></b>
+      <span data-l="fr">facture en règle, virement ou Wise, EUR</span><span data-l="en">proper invoice, bank transfer or Wise, EUR</span></div>
+    <div class="fact"><b><span data-l="fr">Réponse</span><span data-l="en">Response</span></b>
+      <span data-l="fr">le jour même, jours ouvrés</span><span data-l="en">same day, working days</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>
+    <span data-l="fr">Un projet qui déborde, une migration en retard, un ticket qui traîne ?</span>
+    <span data-l="en">A project overflowing, a migration overdue, a ticket going stale?</span>
+  </p>
+  <a class="cta" href="mailto:assadnizar40@gmail.com">
+    <span data-l="fr">Écrivez-moi — réponse le jour même</span>
+    <span data-l="en">Write to me — same-day reply</span>
+  </a>
+  <p class="note">
+    <span data-l="fr">Ou 15 minutes au téléphone : proposez deux créneaux, j'en confirme un.</span>
+    <span data-l="en">Or 15 minutes on a call: offer two slots, I'll confirm one.</span>
+  </p>
+</section>
+
+<footer>
+  Nizar Assad · <span data-l="fr">Développeur Shopify — Mohammedia, Maroc (GMT+1)</span><span data-l="en">Shopify developer — Mohammedia, Morocco (GMT+1)</span> · GitHub : <a href="https://github.com/Nizarassad" style="color:inherit">Nizarassad</a>
+</footer>
+
+<script>
+  function setLang(l){
+    document.documentElement.setAttribute('data-lang', l);
+    document.getElementById('bfr').classList.toggle('on', l==='fr');
+    document.getElementById('ben').classList.toggle('on', l==='en');
+    try{localStorage.setItem('lang', l)}catch(e){}
+  }
+  setLang((function(){
+    try{ if(localStorage.getItem('lang')) return localStorage.getItem('lang'); }catch(e){}
+    return (navigator.language||'fr').startsWith('fr') ? 'fr' : 'en';
+  })());
+</script>
+</body>
+</html>
