@@ -1,0 +1,36 @@
+{
+  "campaign": "flagship-01",
+  "checked_at": "2026-09-14",
+  "narration": {
+    "status": "not_generated",
+    "planned_engine": "Kokoro-82M v1.0",
+    "model_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+    "disclosure": "AI-generated narration: local Kokoro voice. This is not an ElevenLabs voice sample."
+  },
+  "sources": [
+    {
+      "url": "https://elevenlabs.io/pricing",
+      "retrieved": "2026-09-14",
+      "supports": ["Free $0/month", "Free 10k credits/month", "Starter $6/month", "Starter 30k credits/month", "Starter lists Commercial License", "credits charged per generation", "limited eligible free regenerations are indicated before generation"]
+    },
+    {
+      "url": "https://elevenlabs.io/terms-of-use",
+      "retrieved": "2026-09-14",
+      "supports": ["non-EEA regional scope", "Free User non-commercial restriction", "Paid User commercial use subject to terms and prohibited-use policy"]
+    },
+    {
+      "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+      "retrieved": "2026-09-14",
+      "supports": ["affiliate relationship must be clear and hard to miss", "video disclosure should be in the video"]
+    },
+    {
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "retrieved": "2026-09-14",
+      "supports": ["Apache-2.0 model/weights information", "local narration candidate only"]
+    }
+  ],
+  "private_evidence": {
+    "generation_cards": "placeholder motion cards in visual proof; replace only with approved redacted capture before final",
+    "audio": "ElevenLabs free-plan output prohibited"
+  }
+}
