@@ -17,11 +17,14 @@ shutil.copy2(ROOT / 'ai-tools.html', OUT / 'ai-tools.html')
 for file in OUT.rglob('*.html'):
     html = file.read_text()
     html = html.replace('https://nizarassad.github.io', ORIGIN)
+    if 'rel="icon"' not in html:
+        html = html.replace('</head>', '<link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>')
     html = re.sub(r'<a\b[^>]*href="[^"]*' + re.escape(HELD) + r'"[^>]*>.*?</a>', '', html, flags=re.S)
     if file.name == 'privacy.html':
         html = html.replace('Effective: September 8, 2026', 'Effective: September 14, 2026')
         html = html.replace('This site is hosted using GitHub Pages. Like most hosting infrastructure, GitHub may process technical request information needed to deliver and secure the service. GitHub\'s own privacy terms govern that processing.', 'This edition of AI Tools Lab is hosted by Netlify. Netlify may process technical request information needed to deliver and secure the site. See <a href="https://www.netlify.com/privacy/">Netlify’s privacy policy</a> for its processing practices.')
     file.write_text(html)
+(OUT / 'favicon.svg').write_text((ROOT / 'ai-tools' / 'favicon.svg').read_text())
 (OUT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {ORIGIN}/sitemap.xml\n')
 ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
 ET.register_namespace('', ns)
