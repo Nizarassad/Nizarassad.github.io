@@ -1,107 +1,141 @@
-# AI Tools Lab — Professional Vertical Video System
+# AI Tools Lab — Professional Video System
 
-_Status: APPROVED PRODUCTION PLAN / TEMPLATE NOT YET BUILT_
-_Date: 2026-09-14_
+_Status: APPROVED SYSTEM / FLAGSHIP BUILD PENDING_  
+_Updated: 2026-09-14_
 
 ## Creative identity
 
-AI Tools Lab videos should feel like a modern technical publication, not an AI-generated advertisement.
+AI Tools Lab is a faceless technical publication. Videos should feel like evidence-led editorial work, not an AI-generated advertisement.
 
-Visual language:
 - background: near-black `#07090c`
 - accent: electric lime `#a8ff3e`
 - text: warm white
 - crisp editorial typography
-- real interface evidence
-- restrained motion, fast pacing and no stock presenter
+- real interface and official-source evidence
+- restrained, purposeful motion
+- no personal identity, presenter, avatar, or stock host
 
-Recurring opening device: one large claim or warning appears within the first 0.7 seconds, followed immediately by visible evidence.
+Recurring opening device: one consequence or constraint appears immediately, followed by visible evidence.
+
+## Production model
+
+Build the long-form conversion asset first. Shorts are derived discovery assets, never the substitute for a useful master.
+
+1. 5–7 minute 16:9 YouTube buyer tutorial.
+2. Factual/rights/visual/audio review.
+3. Human approval of the master.
+4. Two genuinely adapted vertical shorts.
+
+Campaign 01 source: `campaigns/elevenlabs-campaign-01.md`.
 
 ## Free production stack
 
-1. **Remotion** — primary motion-design and rendering engine. Its current free license covers individuals and organizations of up to three people with unlimited commercial use.
-   - https://www.remotion.dev/docs/license/pricing
-2. **OBS Studio** — free, open-source interface capture on macOS.
-   - https://obsproject.com/
-3. **Kokoro-82M v1.0** — local optional brand narration. The official model card lists Apache-2.0 weights and production deployment. Record the exact model hash and voice used before publishing.
-   - Model hash: `496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4`
+1. **Remotion** — coded motion design and rendering.
+2. **OBS Studio or deterministic browser capture** — real interface/public-page capture.
+3. **Kokoro-82M v1.0** — optional local AI narration after timing lock.
+   - Model SHA-256: `496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4`
    - Initial voice candidate: `af_heart`
-   - https://huggingface.co/hexgrad/Kokoro-82M
-4. **FFmpeg** — assembly, loudness normalization and original procedural clicks/whooshes.
-5. **DaVinci Resolve Free** — optional final visual/audio QC when a specific defect cannot be fixed efficiently in the template.
-   - https://www.blackmagicdesign.com/products/davinciresolve
+4. **FFmpeg** — assembly, loudness measurement/normalization, and original procedural effects.
+5. **DaVinci Resolve Free** — optional bounded manual correction when code changes are inefficient.
 
-No stock footage is needed. Use real product capture, official-source excerpts, AI Tools Lab artwork and original programmatic graphics.
+No credit-based video generator belongs in the core pipeline.
 
-## Master technical specification
+## Master specifications
 
-- canvas: 1080 × 1920
-- frame rate: 30 fps
-- duration: 18–22 seconds
-- format: H.264 MP4
-- audio: AAC, normalized near -14 LUFS, true peak at or below -1 dBTP
-- captions: burned in, maximum two short lines, phone-readable
-- safe areas: keep critical text clear of top 180 px, bottom 320 px and right 120 px
-- disclosure: `Ad · ElevenLabs affiliate` visible at opening
-- muted test: the full message must remain understandable without audio
+### Long-form flagship
+
+- 1920 × 1080
+- 30 fps
+- target duration: 5–7 minutes
+- H.264 MP4
+- AAC audio
+- final integrated loudness near -14 LUFS
+- true peak at or below -1 dBTP
+- designed captions, maximum two lines
+- source excerpts readable at 1080p
+- visual change every 3–7 seconds, faster only for the hook
+
+### Derived vertical shorts
+
+- 1080 × 1920
+- 30 fps
+- 20–35 seconds
+- H.264 MP4 + AAC
+- critical text clear of top 180 px, bottom 320 px, and right 120 px
+- full meaning preserved when muted
 
 ## Motion system
 
-- 0.0–0.7s: hard visual interruption
-- 0.7–3.0s: hook resolves into the product context
-- 3–12s: evidence shown through screen crop, highlight and punch zoom
-- 12–16s: three-part practical rule
-- 16–20s: restrained CTA and brand lockup
-
 Use:
-- 6–10 frame text entrances
-- 102–106% slow push on static evidence
-- lime highlight boxes for the exact source line
-- single-frame or two-frame white flash only between major sections
-- original low-volume click/whoosh effects
-- one consistent end card
+
+- cursor spotlight and evidence crop;
+- lime boxes around exact source language;
+- restrained 102–106% pushes on static evidence;
+- 6–10 frame caption entrances;
+- original low-volume clicks/whooshes;
+- one consistent end card and one CTA.
 
 Avoid:
-- AI avatars
-- generic generated B-roll
-- excessive zooms
-- template transitions
-- more than two font weights
-- decorative captions that obscure evidence
-- unlicensed music or ElevenLabs free-plan audio
 
-## Campaign 01
+- template slide transitions;
+- decorative transcript dumps;
+- AI avatars;
+- stock footage;
+- unrelated generated B-roll;
+- fake interfaces;
+- more than two font weights;
+- unlicensed music;
+- ElevenLabs free-plan audio.
 
-Use `campaigns/elevenlabs-campaign-01.md`: **The Free AI Voice Trap**.
+## Narration rules
 
-Required shots:
-1. ElevenLabs interface establishing the product.
-2. Official commercial-rights guidance with the relevant line highlighted.
-3. Existing Generation 1 and Generation 2 cards, shown without playing audio.
-4. AI Tools Lab checklist.
-5. AI Tools Lab end card.
+The project is fully AI-produced. Human narration is not part of the agreed system.
 
-Narration can use the locally rendered Kokoro candidate only after:
-- exact version/voice/model hash are recorded;
-- the output is reviewed for pronunciation and artifacts;
-- no imitation or third-party voice cloning is involved.
+Generate a low-resolution visual/timing proof first. Only then generate one local Kokoro candidate. Record the exact model, package version, voice file hash, generation settings, command, output hash, and license source.
 
-The first draft may be caption-only if narration delays the render.
+Never imply Kokoro narration is an ElevenLabs output sample. Use an explicit early disclosure.
+
+If pronunciation fails, change the pronunciation map or affected script segment and regenerate only that segment. Do not consume cloud TTS credits.
+
+## Evidence rules
+
+Every factual frame must map to a source manifest containing:
+
+- source URL;
+- retrieval date;
+- local asset path;
+- file hash;
+- license/use basis;
+- claim supported;
+- crop/redaction notes.
+
+Public pages may be captured automatically. Logged-in interface assets must be supplied or already approved; otherwise use a clearly labeled placeholder in proofs only. A placeholder may never appear in a final candidate.
 
 ## Quality gate
 
 A draft passes only when:
-- the hook is legible within the first second;
-- every claim maps to saved evidence;
-- no free-plan ElevenLabs audio is included;
-- disclosure is visible;
-- text passes the phone-size review;
-- audio is not clipped;
+
+- the opening consequence is clear within six seconds;
+- affiliate disclosure is spoken and visible before recommendation;
+- AI narration is identified as local and not a product sample;
+- every number and rights claim has dated evidence;
+- region-specific terms are acknowledged;
 - no personal identity appears;
-- the message remains clear when muted;
-- the export contains no watermark;
-- the final frame gives one action only.
+- no free-plan ElevenLabs audio is included;
+- source excerpts and captions pass phone/1080p review;
+- no text overflows or unsafe crops exist;
+- the muted version remains coherent;
+- audio is not clipped;
+- export has no watermark;
+- final frame gives one action only.
 
-## Codex definition of done
+## Codex definition of done for Flagship 01
 
-Create a small Remotion project under `video/`, reuse the brand palette and artwork, add Campaign 01 as the first composition, render a draft MP4, and store a lightweight source manifest. Keep dependencies minimal. Do not publish or create social accounts.
+1. Create a minimal Remotion project under `video/`.
+2. Implement one 16:9 master composition from the canonical Brain brief.
+3. Use source-driven scenes and reusable primitives, not a slideshow.
+4. Render a low-resolution visual proof before narration.
+5. Add automated checks for duration, resolution, missing assets, overflow, identity strings, disclosure presence, and audio streams.
+6. Store a lightweight source manifest.
+7. Do not render shorts until the long master passes review.
+8. Do not publish, deploy, create accounts, accept terms, or spend money.
