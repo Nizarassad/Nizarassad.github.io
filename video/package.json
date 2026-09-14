@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "check": "node scripts/qc.mjs",
-    "render:proof": "remotion render src/index.ts Flagship01 out/flagship-01-proof.mp4 --scale=0.5 --codec=h264 --crf=28 --log=verbose"
+    "render:proof": "remotion render src/index.ts Flagship01 out/flagship-01-proof.mp4 --scale=0.5 --codec=h264 --crf=28"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",
