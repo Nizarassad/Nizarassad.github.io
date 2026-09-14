@@ -1,0 +1,67 @@
+name: Render Flagship 01 Proof
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "video/**"
+      - ".github/workflows/render-flagship-proof.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: flagship-01-proof
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: video
+
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: video/package.json
+
+      - name: Install pinned project dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run static quality gate
+        run: npm run check
+
+      - name: Render low-resolution visual-only proof
+        run: npm run render:proof
+
+      - name: Verify media contract
+        run: |
+          test -s out/flagship-01-proof.mp4
+          dimensions="$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate -of csv=p=0 out/flagship-01-proof.mp4)"
+          test "$dimensions" = "960,540,30/1"
+          duration="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 out/flagship-01-proof.mp4)"
+          awk -v d="$duration" 'BEGIN { exit !(d >= 344.5 && d <= 345.5) }'
+          audio_count="$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 out/flagship-01-proof.mp4 | wc -l | tr -d ' ')"
+          test "$audio_count" = "0"
+          shasum -a 256 out/flagship-01-proof.mp4 > out/SHA256SUMS.txt
+          cp sources.json out/sources.json
+
+      - name: Upload private review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flagship-01-visual-proof
+          path: |
+            video/out/flagship-01-proof.mp4
+            video/out/SHA256SUMS.txt
+            video/out/sources.json
+          if-no-files-found: error
+          retention-days: 14
