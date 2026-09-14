@@ -1,103 +1,115 @@
-# ElevenLabs Campaign 01
+# ElevenLabs Campaign 01 — The Free AI Voice Trap
 
-## Strategy
+_Status: PRODUCTION PACKAGE READY / NOT RENDERED / NOT PUBLISHED_
 
-One honest demonstration, three platforms, one conversion page. Change only the opening hook between tests so the result teaches us something.
+## Concept
 
-Primary metric: paid ElevenLabs customers per 1,000 video views.
+A faceless, caption-led buyer warning:
 
-Supporting metrics: three-second hold rate, completed views, landing-page visits, affiliate clicks, free signups, and paid conversions.
+> **A free AI voiceover is not automatically cleared for monetized use.**
+
+This is useful content, not a generic product advertisement. It gives creators one concrete licensing check, shows a real first-use observation, and sends interested viewers to the full guide.
+
+No new ElevenLabs generation is required. Do not play or publish the existing free-plan audio in this affiliate campaign.
 
 ## Production format
 
-- Vertical 9:16 video
-- 18 seconds
-- Fast interface recording with large captions
-- Product interface and real generated output, not stock footage
-- Keep important text away from the top, bottom, and right-side interface areas
-- Place `Ad · ElevenLabs affiliate` clearly on screen during the opening
+- Vertical 9:16
+- 18–22 seconds
+- Fast screen recording with large kinetic captions
+- Visuals: ElevenLabs interface, existing Generation 1/2 cards without playing audio, official rights guidance, AI Tools Lab checklist
+- Opening disclosure: `Ad · ElevenLabs affiliate`
+- Audio: optional original human narration or separately verified commercially usable audio; the video must also work muted
 
-## Primary video script
+## Master script and storyboard
 
 ### 0:00–0:03 — Hook
 
-Voiceover: “Before you pay for ElevenLabs, test it with one difficult sentence.”
+Voice/caption: “That free AI voiceover may not be cleared for monetized content.”
 
-Visual: Show the existing technical test sentence in ElevenLabs. Zoom in on the difficult words.
+Visual: ElevenLabs interface with `FREE ≠ COMMERCIAL LICENSE` appearing large.
 
-On-screen text: `Before you pay: run this test`
+### 0:03–0:07 — Evidence
 
-### 0:03–0:07 — The challenge
+Voice/caption: “ElevenLabs says its free plan does not include a commercial license.”
 
-Voiceover: “Mine included retrieval-augmented generation, FastAPI, and reverse proxy.”
+Visual: Show the relevant official guidance, with the sentence highlighted and the source visible.
 
-Visual: Highlight each phrase as it is spoken.
+### 0:07–0:12 — Real use
 
-On-screen text: `Technical words included`
+Voice/caption: “We tested one technical sentence. Two takes differed, and take two sounded better.”
 
-### 0:07–0:11 — Proof
+Visual: Show the existing Generation 1 and Generation 2 cards without playing or downloading their audio.
 
-Voiceover: “I generated two takes. The second sounded better.”
+On-screen qualifier: `One short test · not a full benchmark`
 
-Visual: Show Generation 1, then Generation 2. Play a short piece of each existing output.
+### 0:12–0:16 — Practical value
 
-On-screen text: `2 takes · about 9 seconds each`
+Voice/caption: “Before publishing, check the plan, the voice, and your intended use.”
 
-### 0:11–0:15 — Value
+Visual: Three quick cards: `PLAN` → `VOICE` → `USE`.
 
-Voiceover: “The full three-step test takes only a few minutes.”
+### 0:16–0:20 — CTA
 
-Visual: Show the landing-page sections: paste, choose, review.
+Voice/caption: “Use the free checklist before you generate.”
 
-On-screen text: `Paste → choose → review`
+Visual: AI Tools Lab commercial-use checklist and the focused ElevenLabs guide.
 
-### 0:15–0:18 — Action
-
-Voiceover: “Use my test before you decide. The link is clearly marked as an affiliate link.”
-
-Visual: Show the restrained “Try ElevenLabs” button and the disclosure above it.
-
-On-screen text: `Full test in the link`
+On-screen text: `Full checklist · link in profile`
 
 ## Hook variants
 
-- A — Buyer intent: “Before you pay for ElevenLabs, test it with one difficult sentence.”
-- B — Curiosity: “Can an AI voice pronounce FastAPI correctly?”
-- C — Challenge: “I gave an AI voice a sentence designed to break it.”
+- A — Risk: “That free AI voiceover may not be cleared for monetized content.”
+- B — Direct: “Before you monetize an AI voice, check this.”
+- C — Curiosity: “Free AI voice does not always mean commercial use.”
 
-Start with A. It attracts people already considering the product, which matters more than broad low-intent views.
+Publish A first. Test another hook only after the first version has meaningful reach; do not create three videos before any signal exists.
 
 ## Platform captions
 
-### TikTok
+### TikTok / Instagram
 
-`Ad · ElevenLabs affiliate. Before paying for an AI voice tool, test it with the hardest sentence from your real project. I used two takes and kept the better one. Full three-step test in the link. #ElevenCreativePartner #AIVoice #Voiceover #CreatorTools`
+`Ad · ElevenLabs affiliate. Free AI voice output is not automatically cleared for monetized use. Check the plan, voice, and intended use before publishing. The full checklist and first-use guide are in the profile link. #ElevenCreativePartner #AIVoice #CreatorTools`
 
-Use: `https://ai-tools-lab.netlify.app/go/voice-01/tt`
-
-### Instagram Reels
-
-`Ad · ElevenLabs affiliate. A simple test for choosing an AI voice: use one short sentence containing the names and technical words your final video needs. Two takes were enough to find the better delivery. Full workflow in the link. #ElevenCreativePartner #AIVoiceover #ContentCreator`
-
-Use: `https://ai-tools-lab.netlify.app/go/voice-01/ig`
+Tracking:
+- TikTok: `https://ai-tools-lab.netlify.app/go/voice-01/tt`
+- Instagram: `https://ai-tools-lab.netlify.app/go/voice-01/ig`
 
 ### YouTube Shorts
 
-`Ad · ElevenLabs affiliate. I tested ElevenLabs with one difficult technical sentence and compared two takes. The full three-step workflow and commercial-use checks are linked from the channel/profile.`
+`Ad · ElevenLabs affiliate. Before monetizing an AI voiceover, verify the plan, voice, and intended use. AI Tools Lab’s checklist and first-use guide are linked from the channel profile.`
 
-Use: `https://ai-tools-lab.netlify.app/go/voice-01/yt`
+Tracking: `https://ai-tools-lab.netlify.app/go/voice-01/yt`
 
-URLs in YouTube Shorts descriptions and comments may not be clickable. Put the landing page in the channel profile and say “link in profile.”
+YouTube Shorts description/comment URLs may not be clickable. Use the channel profile link.
 
-## Publishing rule
+## Evidence limits
 
-Publish the same core video on all three platforms. Do not spend money on ads yet. Start with organic evidence.
+Supported:
+- ElevenLabs’ current guidance says free-plan output has no commercial license.
+- One real short technical sentence was generated in two distinct takes.
+- Generation 2 was preferred for that passage.
 
-After at least 1,000 views per hook, keep the hook with the best combination of landing-page visits and paid customers. A hook with fewer views but more paid customers wins.
+Do not claim:
+- a broad quality winner;
+- universal pronunciation accuracy;
+- speed, revenue, conversion or time savings;
+- commercial rights for either existing free-plan output;
+- that upgrading later retroactively licenses those outputs.
 
-## Sources
+## Success measure
 
-- Meta Reels guidance: https://www.facebook.com/business/ads/facebook-instagram-reels-ads
-- FTC disclosure guidance: https://www.ftc.gov/node/60343
-- ElevenLabs affiliate guide: https://elevenlabs.io/affiliate-partner-guide
+Primary early signal: qualified visits to the guide per 1,000 views.
 
+Commercial outcome: paid ElevenLabs customers attributed by PartnerStack. A paid conversion is distinct from payable commission and cash received.
+
+Start organic. No ads or paid tools.
+
+## Production gate
+
+Before public posting:
+1. confirm the video contains no free-plan generated audio;
+2. keep the affiliate disclosure visible at the opening;
+3. verify the official-rights screenshot is current;
+4. check captions at phone size;
+5. present the rendered master for approval.
