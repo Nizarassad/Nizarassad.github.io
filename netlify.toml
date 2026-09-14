@@ -1,5 +1,17 @@
 [build]
-  publish = "."
+  command = "python3 build_netlify.py"
+  publish = "dist"
+
+[[redirects]]
+  from = "/"
+  to = "/ai-tools.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/ai-tools/elevenlabs-vs-kokoro-tts-2026.html"
+  to = "/ai-tools/tts-commercial-use-checklist.html"
+  status = 302
 
 [[headers]]
   for = "/*"
