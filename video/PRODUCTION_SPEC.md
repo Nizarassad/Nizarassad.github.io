@@ -139,3 +139,7 @@ A draft passes only when:
 6. Store a lightweight source manifest.
 7. Do not render shorts until the long master passes review.
 8. Do not publish, deploy, create accounts, accept terms, or spend money.
+
+## Automated proof
+
+The GitHub workflow `.github/workflows/render-flagship-proof.yml` renders the full 5:45 master at 960 × 540 for review, verifies its media contract through structured ffprobe JSON, records a SHA-256 checksum, and retains the visual-only artifact for 14 days. A successful artifact is still a draft and does not authorize publication.
