@@ -1,115 +1,84 @@
 # ElevenLabs Campaign 01 — The Free AI Voice Trap
 
-_Status: PRODUCTION PACKAGE READY / NOT RENDERED / NOT PUBLISHED_
+_Status: LONG-FORM SCRIPT LOCKED / BUILD NOT STARTED / NOT PUBLISHED_  
+_Updated: 2026-09-14_
 
-## Concept
+## Canonical source
 
-A faceless, caption-led buyer warning:
+Business truth, evidence limits, locked narration, shot list, disclosures, and build authority live in:
 
-> **A free AI voiceover is not automatically cleared for monetized use.**
+`Nizarassad/career-hq/revenue/affiliate-ai-content/flagship-01-production-brief.md`
 
-This is useful content, not a generic product advertisement. It gives creators one concrete licensing check, shows a real first-use observation, and sends interested viewers to the full guide.
+This repository is the implementation surface. Do not silently change the locked claims or narration here.
 
-No new ElevenLabs generation is required. Do not play or publish the existing free-plan audio in this affiliate campaign.
+## Launch order
 
-## Production format
+1. Build the 5–7 minute 16:9 flagship:
+   **ElevenLabs for Faceless Videos: What the Free Plan Doesn't Cover**
+2. Render a low-resolution visual proof before narration.
+3. Generate one local Kokoro narration candidate after timing is stable.
+4. Run factual, rights, identity, disclosure, overflow, muted-view, and audio QC.
+5. Return the master for human approval.
+6. Only then derive:
+   - **Don't Publish That Free AI Voice Yet**
+   - **Stop Wasting AI Voice Credits**
 
-- Vertical 9:16
-- 18–22 seconds
-- Fast screen recording with large kinetic captions
-- Visuals: ElevenLabs interface, existing Generation 1/2 cards without playing audio, official rights guidance, AI Tools Lab checklist
-- Opening disclosure: `Ad · ElevenLabs affiliate`
-- Audio: optional original human narration or separately verified commercially usable audio; the video must also work muted
+The previous 20-second silent vertical draft is a motion-system prototype only, not the launch centerpiece.
 
-## Master script and storyboard
+## Required creative approach
 
-### 0:00–0:03 — Hook
+- fully AI-produced and faceless;
+- real official-source evidence + genuine product-interface evidence;
+- custom Remotion motion design and designed captions;
+- local, auditable AI narration;
+- no AI avatar, stock presenter, generic stock footage, or unrelated generated B-roll;
+- no human identity or narration;
+- no ElevenLabs free-plan audio;
+- no invented product usage, outcome, testimonial, revenue, or quality winner.
 
-Voice/caption: “That free AI voiceover may not be cleared for monetized content.”
+## Product claim boundary
 
-Visual: ElevenLabs interface with `FREE ≠ COMMERCIAL LICENSE` appearing large.
+Allowed, when the source and date are visible:
 
-### 0:03–0:07 — Evidence
+- Free: USD 0/month and 10,000 monthly credits on the pricing page checked 2026-09-14.
+- Starter: USD 6/month, 30,000 monthly credits, and commercial license listed among additions over Free on the same dated page.
+- Current non-EEA terms distinguish free non-commercial use from paid commercial use subject to the terms.
+- Region-specific terms exist; viewers must check their applicable version.
+- One narrow interface test produced two takes; Generation 2 was preferred for that single sentence.
+- The cards may be shown silently.
 
-Voice/caption: “ElevenLabs says its free plan does not include a commercial license.”
+Not allowed:
 
-Visual: Show the relevant official guidance, with the sentence highlighted and the source visible.
+- broad quality superiority;
+- universal pronunciation/long-form performance claims;
+- a “ban,” illegality, or guaranteed consequence;
+- retroactive licensing assumptions;
+- commercial use of the existing free-plan outputs;
+- speed, savings, earnings, conversion, or revenue promises.
 
-### 0:07–0:12 — Real use
+## Required disclosure
 
-Voice/caption: “We tested one technical sentence. Two takes differed, and take two sounded better.”
+Spoken near the opening:
 
-Visual: Show the existing Generation 1 and Generation 2 cards without playing or downloading their audio.
+> This video contains an ElevenLabs affiliate link. AI Tools Lab may earn a commission if you subscribe through it, at no extra cost to you. This review remains independent.
 
-On-screen qualifier: `One short test · not a full benchmark`
+Visible before any recommendation:
 
-### 0:12–0:16 — Practical value
+> Ad · ElevenLabs affiliate · #ElevenCreativePartner
 
-Voice/caption: “Before publishing, check the plan, the voice, and your intended use.”
+AI narration disclosure:
 
-Visual: Three quick cards: `PLAN` → `VOICE` → `USE`.
+> AI-generated narration: local Kokoro voice. This is not an ElevenLabs voice sample.
 
-### 0:16–0:20 — CTA
+## Destinations
 
-Voice/caption: “Use the free checklist before you generate.”
+- Guide: https://ai-tools-lab.netlify.app/ai-tools/elevenlabs-first-voiceover.html
+- Checklist: https://ai-tools-lab.netlify.app/ai-tools/tts-commercial-use-checklist.html
+- YouTube tracked route: https://ai-tools-lab.netlify.app/go/voice-01/yt
+- PartnerStack destination: https://try.elevenlabs.io/hf8t7vc305vb
 
-Visual: AI Tools Lab commercial-use checklist and the focused ElevenLabs guide.
+## Build gate
 
-On-screen text: `Full checklist · link in profile`
+Codex may build and render drafts. Codex may not publish, create channels, spend money, accept terms, buy a plan, generate ElevenLabs audio, or replace missing evidence with an unlabeled fake.
 
-## Hook variants
-
-- A — Risk: “That free AI voiceover may not be cleared for monetized content.”
-- B — Direct: “Before you monetize an AI voice, check this.”
-- C — Curiosity: “Free AI voice does not always mean commercial use.”
-
-Publish A first. Test another hook only after the first version has meaningful reach; do not create three videos before any signal exists.
-
-## Platform captions
-
-### TikTok / Instagram
-
-`Ad · ElevenLabs affiliate. Free AI voice output is not automatically cleared for monetized use. Check the plan, voice, and intended use before publishing. The full checklist and first-use guide are in the profile link. #ElevenCreativePartner #AIVoice #CreatorTools`
-
-Tracking:
-- TikTok: `https://ai-tools-lab.netlify.app/go/voice-01/tt`
-- Instagram: `https://ai-tools-lab.netlify.app/go/voice-01/ig`
-
-### YouTube Shorts
-
-`Ad · ElevenLabs affiliate. Before monetizing an AI voiceover, verify the plan, voice, and intended use. AI Tools Lab’s checklist and first-use guide are linked from the channel profile.`
-
-Tracking: `https://ai-tools-lab.netlify.app/go/voice-01/yt`
-
-YouTube Shorts description/comment URLs may not be clickable. Use the channel profile link.
-
-## Evidence limits
-
-Supported:
-- ElevenLabs’ current guidance says free-plan output has no commercial license.
-- One real short technical sentence was generated in two distinct takes.
-- Generation 2 was preferred for that passage.
-
-Do not claim:
-- a broad quality winner;
-- universal pronunciation accuracy;
-- speed, revenue, conversion or time savings;
-- commercial rights for either existing free-plan output;
-- that upgrading later retroactively licenses those outputs.
-
-## Success measure
-
-Primary early signal: qualified visits to the guide per 1,000 views.
-
-Commercial outcome: paid ElevenLabs customers attributed by PartnerStack. A paid conversion is distinct from payable commission and cash received.
-
-Start organic. No ads or paid tools.
-
-## Production gate
-
-Before public posting:
-1. confirm the video contains no free-plan generated audio;
-2. keep the affiliate disclosure visible at the opening;
-3. verify the official-rights screenshot is current;
-4. check captions at phone size;
-5. present the rendered master for approval.
+The rendered master requires explicit human approval before publication.
